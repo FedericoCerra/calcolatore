@@ -1,15 +1,33 @@
 {
-  "name": "calcolatrice",
+  "name": "calcolatore",
   "version": "1.0.0",
-  "description": "",
-  "main": "calculator.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "una semplice calcolatrice per somma, sottrazione, moltiplicazione e divisione",
+  "main": "src/calculator.js",
   "type": "commonjs",
+  "bin": {
+    "calcolatrice": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "calcolatrice",
+    "nodejs",
+    "CLI",
+    "math",
+    "calculator"
+  ],
+  "author": "Federico Cerra",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FedericoCerra/calcolatore"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   }
